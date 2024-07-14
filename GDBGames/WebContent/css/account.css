@@ -1,0 +1,139 @@
+body {
+        background: black;
+        color: white;
+    }
+    
+    .error-message, .required {
+    	color: red;
+    	font-size: 1.2em;
+    }
+    fieldset {
+    	width: 40%;
+    }
+    .form-container {
+    	margin-left: 26%;
+    }
+    table {
+        width: 70%;
+        border-collapse: collapse;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    table {
+    	margin-bottom: 5%;
+        border: 1px solid white;
+    }
+    table a {
+    	color: white;
+    }
+    
+    th, td {
+    	border: 1px solid white;
+        padding: 10px;
+    }
+    .botton {
+    	border: none;
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 12px;
+        background-color: #800080;
+        color: white;
+        cursor: pointer;
+        margin-left: -0.5%;
+    }
+    .botton:hover {
+    	background-color: #a64ca6;
+  	}
+
+    .botton a {
+    	background-color: none;
+        text-decoration: none;
+        color: white;
+        
+    }
+
+    .recalmo-inviato p {
+        color: green;
+    }
+    
+    /* smartphone */
+  @media screen and (max-width: 600px) {
+    .header .fotoRic {
+    	width: 80%;
+    }
+    .header {
+    	margin-bottom: 10%;
+    	display: grid;
+    }
+    .header .logo {
+    	margin-left: 15%;
+    }
+    .header .home {
+    	margin-left: 10px;
+    }
+    .header .sinistra {
+    	display: contents;
+    }
+    .header .account {
+    	margin-top: -35%;
+    	margin-left: 65%;
+    }
+    .header .destra {
+    	margin-top: 10px;
+    	margin-left: 10px;
+    }
+    .f {
+    	width: 85%;
+    	margin-top: 10%;
+    	text-align: center;
+    }
+    .f .contatto {
+    	margin-bottom: 5%;
+    }
+    .f .crediti b {
+    	margin-right: 22%;
+    	text-align: center;
+    }
+    .f .crediti p {
+    	text-align: center;
+    }
+    .f .crediti {
+    	margin-top: 10%;
+    }
+    table {
+    	width: 90%;
+    }
+    .form-container {
+    	margin-left: 0;
+    	width: 80%;
+    }
+    .form-container fieldset {
+    	width: 80%;
+    }
+  }
+  
+  /* Stili per tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .f footer {
+    	width: auto;
+    	position: relative;
+    	margin-top: 25%;
+    }
+    .header .destra { 
+       		margin-bottom: -5%;
+   			margin-left: 5%;
+   			margin-right: -85%;
+   		}
+   		.header .search-bar { 
+        	width: 180px;
+    	}
+    	.f .contatto {
+            	margin-right: 20px;
+            	margin-left: -30px;
+            }
+        .form-container fieldset {
+    	width: 50%;
+    }
+}

@@ -1,0 +1,28 @@
+.container-reclamo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 55px;
+    }
+
+    .reclamo {
+        width: calc(33.333% - 20px); 
+        margin: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ddd; /* Aggiungi uno stile per i bordi */
+        padding: 10px; /* Aggiungi un po' di padding */
+    }
+
+    .reclamo h3, .reclamo p {
+        margin: 0 0 10px 0; 
+    }
+    .reclamo p {
+    	margin-left: 10%;
+    }
+ 	
+ 	/*smartphone */   
+    @media screen and (max-width: 600px) {
+    	.reclamo {
+    		width: auto;
+    	}
+
+	}

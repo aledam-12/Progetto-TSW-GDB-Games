@@ -1,0 +1,135 @@
+.fine {
+    		position: absolute;
+    		width: 100%;
+    		margin-top: -7%;
+    	}
+        body {
+            background-color: black;
+            color: white;
+            overflow-y: auto;
+        }
+        .novita {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .carousel {
+            width: 100%;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .carousel img {
+            width: 50%;
+            height: 300px;;
+            display: block;
+            margin: 0 auto; 
+        }
+        .griglia {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .prodotto {
+         	padding-top: 5%; 
+    		padding-bottom: 5%;
+        	border: 3px solid white;
+            width: 30%;
+            margin-bottom: 10%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .prodotto img {
+            width: 55%; 
+            height: auto;
+            display: block;
+            margin: 0 auto; 
+            transform: translateY(-10px); 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+            
+        }
+        .prodotto img:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.5); 
+        }
+        .prodotto h2 {
+            margin-top: 0;
+            margin-bottom: -20px;
+        }
+        .prodotto p {
+            margin-top: 0;
+            margin-bottom: -15px;
+        }
+        
+        /* smartphone */
+  @media screen and (max-width: 600px) {
+    .header .fotoRic {
+    	width: 80%;
+    }
+    .header {
+    	margin-bottom: 10%;
+    	display: grid;
+    }
+    .header .logo {
+    	margin-left: 15%;
+    }
+    .header .home {
+    	margin-left: 10px;
+    }
+    .header .sinistra {
+    	display: contents;
+    }
+    .header .account {
+    	margin-top: -35%;
+    	margin-left: 65%;
+    }
+    .header .destra {
+    	margin-top: 10px;
+    	margin-left: 10px;
+    }
+    .fine {
+    	width: 85%;
+    	margin-top: 10%;
+    	text-align: center;
+    }
+    .fine .contatto {
+    	margin-bottom: 5%;
+    }
+    .fine .crediti b {
+    	margin-right: 22%;
+    	text-align: center;
+    }
+    .fine .crediti p {
+    	text-align: center;
+    }
+    .fine .crediti {
+    	margin-top: 10%;
+    }
+    .prodotto {
+                width: 45%; 
+            }
+    .carousel img {
+    	width: 70%;
+    	height: auto;
+    }
+  }
+        
+        /*tablet*/
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+    		 .prodotto {
+                width: 45%; 
+            }
+            .fine {
+            	margin-top: 5%;
+            }
+            .fine .contatto {
+            	margin-right: 20px;
+            	margin-left: -30px;
+            }
+       .destra {
+       		margin-bottom: -5%;
+   			margin-left: 5%;
+   			margin-right: -85%;
+   		}
+   		.search-bar {
+        	width: 180px;
+    	}
+    	}

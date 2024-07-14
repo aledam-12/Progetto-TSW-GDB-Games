@@ -1,0 +1,213 @@
+    body {
+        background: radial-gradient(circle, #4B0082, black 70%);
+        color: white;
+    }
+    .container {
+        margin: 3% 10% 1% 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .gioco {
+        text-align: center;
+        flex: 1;
+        border: 3px solid white; /* Aggiunge un bordo bianco */
+        padding: 20px; /* Aggiunge spazio interno per il bordo */
+    }
+    .details {
+        flex: 2;
+        margin-left: -0.3%;
+        display: flex;
+        flex-direction: column;
+        border: 3px solid white; /* Aggiunge un bordo bianco */
+    }
+    img {
+        margin-bottom: -8%;
+        max-width: 85%;
+        height: auto;
+    }
+    .pegi a {
+    	background: black;
+    	color: white;
+    	text-decoration: none;
+    	border: 3px solid white;
+    }
+    .pegi{
+    	margin-top: -8.3%;
+    	margin-left: 3%;
+    }
+    .pegi h1 {
+    	display: flex;
+   		align-items: center;
+    	justify-content: center;
+    	text-align: center;
+    	margin-bottom: 0px;
+    	width: 95px;
+    	height: 70px;
+    	background:red;
+    	font-size: 6em;
+    	border: 3px solid white; 
+    }
+    .desc {
+    	margin-left: 3%;
+    }
+    .desc p {
+    	text-align: center;
+    	margin-top: -3%;
+    }
+    .mprod {
+    	margin-top: 5.3%;
+    	text-align: center;
+    	diplay: flex;
+    	justify-content: center;
+    	align-items: center;
+    }
+    .mprod a {
+    	color: white;
+    	text-decoration: none;
+    }
+    .mprod p {
+    	margin-bottom: -1%;
+    	font-size: 2.5em;
+    }
+    .button {
+    	cursor: pointer;
+    	width: 400px;
+    	height: auto;
+    	background-color: #800080; 
+    	border-radius: 12px;
+    	padding: 10px 25px;
+    	text-align: center;
+    	display: inline-block;
+    	font-size: 16px;
+    	margin: 4px 2px;
+    	border: none;
+    }
+    .button:hover {
+    	background-color: #a64ca6;
+  	}
+  	.head .logo {
+  		margin-top: -7%;
+  	}
+  	.head .ricerca {
+  		margin-top: 0%;
+  	}
+  	.head .omino {
+  		margin-top: -5%;
+  	}
+  	
+  	/* smartphone */
+  @media screen and (max-width: 600px) {
+    .header .fotoRic {
+    	width: 80%;
+    }
+    .header {
+    	margin-bottom: 10%;
+    	display: grid;
+    }
+    .header .logo {
+    	margin-left: 15%;
+    }
+    .header .home {
+    	margin-left: 10px;
+    }
+    .header .sinistra {
+    	display: contents;
+    }
+    .header .account {
+    	margin-top: -40%;
+    	margin-left: 65%;
+    }
+    .header .destra {
+    	margin-top: 10px;
+    	margin-left: 10px;
+    }
+    .f {
+    	width: 85%;
+    	margin-top: 10%;
+    	text-align: center;
+    }
+    .f .contatto {
+    	margin-bottom: 5%;
+    }
+    .f .crediti b {
+    	margin-right: 22%;
+    	text-align: center;
+    }
+    .f .crediti p {
+    	text-align: center;
+    }
+    .f .crediti {
+    	margin-top: 15%;
+    }
+   
+   .container {
+   		margin: 0;
+        padding: 10px;
+    }
+
+    .gioco h2 {
+        font-size: 13px;
+    }
+    
+
+    .pegi {
+    	font-size: 10px;
+    	margin-top: -7%;
+    }
+    .pegi h1 {
+    	width: 50px;
+    	height: 50px;
+    	font-size: 5.4em;
+    	margin-bottom: -3%;
+    	border: solid 2px white;
+    }
+    .pegi a {
+    	font-size: 0.85em;
+    	border: solid 2px white;
+    }
+
+    .desc h2 {
+        font-size: 20px;
+    }
+
+    .desc p {
+        font-size: 14px;
+    }
+
+
+
+    .button {
+        font-size: 10px;
+        padding: 8px 16px;
+        width: 95%;
+    }
+   
+    
+  }
+  
+  	/* tablet */
+  	@media screen and (min-width: 768px) and (max-width: 1024px) {
+  			.container {
+        			margin: 20% 10% 20% 10%;
+        	}
+        .header .destra {
+        	margin-bottom: -5%;
+   			margin-left: 5%;
+   			margin-right: -85%;
+   		}
+   		.header .search-bar {
+        	width: 180px;
+    	}
+    	.f .contatto {
+            	margin-right: 20px;
+            	margin-left: -30px;
+            }
+  	}
+  	/* pc */
+  	@media screen and (min-width: 1024px) {
+  		.header .ricerca {
+  			margin-top: 0%;
+  		}
+  	}
+  	

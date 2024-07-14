@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+
+
+<display-name>gdbgames</display-name>
+  
+  <!-- Welcome Files -->
+  <welcome-file-list>
+    <welcome-file>catalogo.jsp</welcome-file>
+    <welcome-file>/admin/admin.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- Mappatura delle Servlet -->
+  	<servlet>
+  		<servlet-name>Checkout</servlet-name>
+  		<servlet-class>control.Checkout</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>Checkout</servlet-name>
+  		<url-pattern>/utenteLoggato/Checkout</url-pattern>
+  	</servlet-mapping>
+  	<servlet>
+  		<servlet-name>Registrazione</servlet-name>
+  		<servlet-class>control.ControlloRegistrazione</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>Registrazione</servlet-name>
+  		<url-pattern>/controlloRegistrazione</url-pattern>
+  	</servlet-mapping>
+  	<servlet>
+  		<servlet-name>Ricerca</servlet-name>
+  		<servlet-class>control.Searchbar</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>Ricerca</servlet-name>
+  		<url-pattern>/searchbar</url-pattern>
+  	</servlet-mapping>
+  	 <servlet>
+  		<servlet-name>RicercaJSON</servlet-name>
+  		<servlet-class>control.SearchbarJSON</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>RicercaJSON</servlet-name>
+  		<url-pattern>/SearchbarJSON</url-pattern>
+  		<url-pattern>/utenteLoggato/SearchbarJSON</url-pattern>
+  		<url-pattern>/admin/SearchbarJSON</url-pattern>
+  	</servlet-mapping>
+  	<servlet>
+  		<servlet-name>Crea Fattura</servlet-name>
+  		<servlet-class>control.CreaFattura</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>Crea Fattura</servlet-name>
+  		<url-pattern>/creaFattura</url-pattern>
+  	</servlet-mapping>
+  	<servlet>
+  		<servlet-name>Invio Reclamo</servlet-name>
+  		<servlet-class>control.Reclamo</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>Invio Reclamo</servlet-name>
+  		<url-pattern>/utenteLoggato/reclamo</url-pattern>
+  	</servlet-mapping>
+  	<servlet>
+  		<servlet-name>UserUpdate</servlet-name>
+  		<servlet-class>control.UserUpdate</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>UserUpdate</servlet-name>
+  		<url-pattern>/utenteLoggato/userUpdate</url-pattern>
+  	</servlet-mapping>
+  	<servlet>
+  		<servlet-name>AdminDelete</servlet-name>
+  		<servlet-class>control.AdminDelete</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>AdminDelete</servlet-name>
+  		<url-pattern>/admin/adminDelete</url-pattern>
+  	</servlet-mapping>
+  	<servlet>
+  		<servlet-name>AdminUpdate</servlet-name>
+  		<servlet-class>control.AdminUpdate</servlet-class>
+  	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminUpdate</servlet-name>
+		<url-pattern>/admin/adminUpdate</url-pattern>
+	</servlet-mapping>  
+    <servlet>
+    	<servlet-name>controlloCatalogo</servlet-name>
+    	<servlet-class>control.ControlloCatalogo</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+   		<servlet-name>controlloCatalogo</servlet-name>
+    	<url-pattern>/controlloCatalogo</url-pattern>
+  	</servlet-mapping>
+  	<servlet>
+  		<servlet-name>Dettagli Ordine</servlet-name>
+  		<servlet-class>control.DettagliOrdine</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>Dettagli Ordine</servlet-name>
+  		<url-pattern>/dettagliOrdine</url-pattern>
+  	</servlet-mapping>
+    <servlet>
+    	<servlet-name>Login</servlet-name>
+    	<servlet-class>control.Login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>Login</servlet-name>
+    	<url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+        <servlet>
+    	<servlet-name>LoginJSON</servlet-name>
+    	<servlet-class>control.LoginJSON</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>LoginJSON</servlet-name>
+    	<url-pattern>/LoginJSON</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    	<servlet-name>controlloCarrello</servlet-name>
+    	<servlet-class>control.ControlloCarrello</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>controlloCarrello</servlet-name>
+    	<url-pattern>/controlloCarrello</url-pattern>
+  	</servlet-mapping>
+  	<servlet>
+  		<servlet-name>Logout</servlet-name>
+  		<servlet-class>control.Logout</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>Logout</servlet-name>
+  		<url-pattern>/utenteLoggato/Logout</url-pattern>
+  	</servlet-mapping>
+  	<servlet>
+  		<servlet-name>CarrelloJSON</servlet-name>
+  		<servlet-class>control.ControlloCarrelloJSON</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>CarrelloJSON</servlet-name>
+  		<url-pattern>/carrelloJSON</url-pattern>
+  	</servlet-mapping>
+    <servlet>
+      	<servlet-name>getfotoServlet</servlet-name>
+      	<servlet-class>control.GetFotoServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>getfotoServlet</servlet-name>
+    	<url-pattern>/getFoto</url-pattern>
+  	</servlet-mapping>
+  	<servlet>
+  		<servlet-name>Inserimento Prodotti</servlet-name>
+  		<servlet-class>control.AdminInput</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>Inserimento Prodotti</servlet-name>
+  		<url-pattern>/admin/insert</url-pattern>
+  	</servlet-mapping>
+  	<servlet>
+  		<servlet-name>Visualizza Ordini Admin</servlet-name>
+  		<servlet-class>control.AdminOutput</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>Visualizza Ordini Admin</servlet-name>
+  		<url-pattern>/admin/adminCheck</url-pattern>
+  	</servlet-mapping>
+  	<servlet>
+  		<servlet-name>Visualizza Dettaglio Fattura</servlet-name>
+  		<servlet-class>control.DettagliOrdine</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>Visualizza Dettaglio Fattura</servlet-name>
+  		<url-pattern>/admin/dettagliOrdine</url-pattern>
+  		<url-pattern>/utenteLoggato/dettagliOrdine</url-pattern>
+  	</servlet-mapping>
+  	
+  <!-- Filtro per utenti -->
+  <filter>
+  	<filter-name>FiltroAutenticazione</filter-name>
+    <filter-class>control.Filtro</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>FiltroAutenticazione</filter-name>
+    <url-pattern>/admin/*</url-pattern>
+ </filter-mapping> 
+   <filter-mapping>
+    <filter-name>FiltroAutenticazione</filter-name>
+    <url-pattern>/utenteLoggato/*</url-pattern>
+ </filter-mapping>
+ <filter-mapping>
+    <filter-name>FiltroAutenticazione</filter-name>
+    <url-pattern>/pdf/*</url-pattern>
+  </filter-mapping>
+ 
+  <!-- Pagine di errore -->
+  <error-page>
+  	<error-code>404</error-code>
+  	<location>/errori/404.jsp</location>
+  </error-page>
+  <error-page>
+  	<error-code>500</error-code>
+  	<location>/errori/errore.html</location>
+  </error-page>
+  <error-page>
+  	<error-code>415</error-code>
+  	<location>/errori/errore.html</location>
+  </error-page>
+  
+</web-app>

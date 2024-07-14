@@ -1,0 +1,180 @@
+
+.ordini, .cl{
+    width: 30%;
+    border: 1px solid white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-size: 1.2em;
+  	margin: 0% 30% 0% 30%;
+  }
+  button {
+  	border: none;
+  }
+  .h {
+  	margin: 5% 0% 1% 25%;
+  }
+
+.required {
+    color: red;
+  }
+  .error-message {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 20px;
+   }
+  
+.ordini label, .cl label {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 2px;
+  }
+  
+ .ordini input[type="date"] {
+	width: 120px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+.ordini input[type="submit"],
+.ordini input[type="reset"],
+.ordini button, 
+.cl input[type="submit"],
+.cl input[type="reset"],
+.cl button {
+    background-color: #800080;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 1em;
+    width: auto;
+  }
+.ordini input[type="submit"]:hover,
+.ordini input[type="reset"]:hover,
+.ordini button:hover, 
+.cl input[type="submit"]:hover,
+.cl input[type="reset"]:hover,
+.cl button:hover
+ {
+	background-color: #a64ca6;
+}
+
+.titoli {
+            display: flex;
+            justify-content: space-between;
+        }
+ .titoli h2 {
+ 	margin-right: 27.6%;
+ }
+.inserisci {
+	display: flex;
+}
+.inserisci .copia {
+	width: 95%;
+	margin-left: 30%;
+}
+
+/* smartphone */
+  @media screen and (max-width: 600px) {
+    .header .fotoRic {
+    	width: 80%;
+    }
+    .header {
+    	margin-bottom: 10%;
+    	display: grid;
+    }
+    .header .logo {
+    	margin-left: 15%;
+    }
+    .header .home { 
+    	margin-left: 10px;
+    }
+    .header .sinistra {
+    	display: contents;
+    }
+    .header .account {
+    	margin-top: -35%;
+    	margin-left: 65%;
+    }
+    .header .destra {
+    	margin-top: 10px;
+    	margin-left: 10px;
+    } 
+    .ordini botton {
+    	width: 100%;
+    }
+    .scrool {
+   		 overflow-x: auto;
+   		 max-width: 300px; 
+    }
+    .cl {
+    	width: 60%;
+    	margin: 0% 15% 0% 15%;
+    }
+    .dett .pro {
+    	width: calc(73.333% - 20px);
+    }
+    body .dett {
+    	display: ruby;
+    }
+    body .griglia {
+    	display: block;
+    }
+    .griglia .prodotto {
+    	width: 80%;
+    	margin-left: 10%;
+    }
+    .ordini {
+    	width: 70%;
+    	margin: 0% 15% 0% 15%;
+    }
+    body .reclamo {
+    	width: 80%;
+    }
+    body .videogioco {
+    	display: flow;
+    	width: 40%;
+    }
+    .inserisci .copia {
+    	width: 75%;
+    	margin-left: 5%;
+    }
+    .videogioco .file {
+    	font-size: 0.5em;
+    }
+  }
+  /* Stili per tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+   	.header .destra {
+       		margin-bottom: -5%;
+   			margin-left: 5%;
+   			margin-right: -85%;
+   		}
+   		.header .search-bar {
+        	width: 180px;
+    	}
+    	.inserisci .videogioco textarea {
+    		width: 85%;
+    		height: 30%;
+    	}
+    	.inserisci .videogioco .error-message {
+    		width: 80%;
+    	}
+    	.inserisci .videogioco input[type = "file"] {
+    		font-size: 80%;
+    	}
+    	.inserisci .copia {
+    		margin-left: 16%; 
+    		width: 80%;
+    	}
+    	.griglia .prodotto .elimina .el {
+    		margin: 5% -15% 5%;
+    	}
+    	.dett .pro .e input[type="submit"], .dett .pro .e input[type="reset"], .dett .pro .e .a {
+    		width: 43%;
+    		margin-left: 30%;
+    	}
+    }

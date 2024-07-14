@@ -1,0 +1,209 @@
+        body {
+            background-color: black;
+            color: white;
+            overflow-y: auto;
+        }
+        .griglia {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .prodotto {
+         	padding-top: 5%; 
+    		padding-bottom: 5%;
+        	border: 3px solid white;
+            width: 30%;
+            margin-bottom: 10%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .prodotto img {
+            width: 55%; 
+            height: auto;
+            display: block;
+            margin: 0 auto; 
+            transform: translateY(-10px); 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+            
+        }
+        .prodotto img:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.5); 
+        }
+        .prodotto h2 {
+        margin-top: -2%;
+        margin-bottom: -5%;
+		line-height: 1em;
+		font-size: 2em;
+        }
+        .prodotto p {
+        margin-top: -6%;
+        line-height: 1em;
+        font-size: 1.3em;
+        }
+        .prodotto h4 {
+        margin-bottom: 5%;
+        font-size: 1.4em;
+        }
+    .b, .MOD {
+    	width: 60%;
+    	background-color: #800080; 
+    	border-radius: 12px;
+    	padding: 10px 25px;
+    	text-align: center;
+    	display: inline-block;
+    	font-size: 16px;
+    	margin: 4px 2px;
+    	color: white;
+    	cursor: pointer;
+    	border: none;
+    }
+    .b:hover, .MOD:hover {
+    	background-color: #a64ca6;
+  	}
+       
+    	.elimina {
+    		margin: 10px 10px 20px 10px;
+        	border: solid 2px white;
+        }
+        .elimina input[type="number"] {
+        	width: 40px;
+        	margin-right: 20%;
+        	margin-top: 10px;
+        	margin-bottom: 20px;
+        }
+        .elimina .el {
+        	margin: 5% -15% 5% 10%;
+        	color: white;
+        	background-color: black;
+        	border: solid 2px white;
+        	font-size: 1em;
+        	cursor: pointer;
+        }
+        .elimina .el:hover, 
+        .conferma input[type="submit"]:hover, 
+        .conferma button:hover {
+        	background-color: #a64ca6;
+        }
+        .conferma {
+        	margin-top: 5%;
+        	margin-bottom: 5%;
+        }
+        .conferma p {
+        	margin-bottom: 2%;
+        }
+        .conferma input[type="submit"],
+        .conferma button {
+        width: 55px;
+        cursor: pointer;
+    	background-color: #800080; 
+    	border-radius: 12px;
+    	text-align: center;
+    	padding: 5px;
+    	display: inline-block;
+    	margin: 4px 2px;
+    	color: white;
+    	border: none;	
+        }
+        
+        .edit {
+        	margin: 10px 10px 20px 10px;
+        	border: solid 2px white; 
+        }
+        .edit label, .edit input[type="text"], .edit input[type="number"] {
+        	margin-bottom: 20px;
+        }
+        .edit input[type="text"], .edit input[type="number"] {
+        	width: 60px;
+        }
+        .edit input[type="text"] {
+        	margin-top: 10px;
+        }
+        .edit input[type="submit"],
+        .edit button {
+        width: 70px;
+        cursor: pointer;
+    	background-color: #800080; 
+    	border-radius: 12px;
+    	text-align: center;
+    	padding: 5px;
+    	display: inline-block;
+    	color: white;	
+    	margin-bottom: 20px;
+    	margin-top: -10px;
+    	border: none
+        }
+        .edit input[type="submit"]:hover, 
+        .edit button:hover {
+        	background-color: #a64ca6;
+        }
+         .dett {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .pro {
+    	border: solid 2px white;
+        width: calc(33.333% - 20px);
+        margin: 10px;
+        box-sizing: border-box;
+    }
+    .pro h2 {
+    	text-align: center;
+    }
+    .pro p {
+    	margin-left: 5%;
+    	margin-right: 5%;
+    }
+    .pro .M {
+    	width: 30%;
+        cursor: pointer;
+    	background-color: #800080; 
+    	border-radius: 12px;
+    	text-align: center;
+    	padding: 5px;
+    	display: inline-block;
+    	color: white;	
+    	margin: 0% 35% 5% 35%;
+    	border: none;
+    	font-size: 1em;
+    }	
+    .pro .M:hover {
+        	background-color: #a64ca6;
+     }
+     .e {
+     	border: 2px solid white;
+     	margin-right: 10px;
+     	margin-left: 10px;
+     	margin-bottom: 10px;
+     	padding: 10px;
+     }
+     .e input[type="submit"],
+     .e input[type="reset"],
+     .e .a {
+    	width: 25%;
+    	height: 30px;
+    	background-color: #800080; 
+    	border-radius: 12px;	
+    	text-align: center;
+    	display: inline-block;
+    	margin: 4px 2px;
+    	color: white;
+    	cursor: pointer;
+    	font-size: 1em;
+    	margin-left: 5%;
+    	border: none;
+    }
+    .e input[type="submit"]:hover,
+     .e input[type="reset"]:hover,
+     .e .a:hover {
+    	background-color: #a64ca6;
+  	}
+  	.e label, .e textarea, .e input[type="number"] {
+  		margin-left: 5%;
+  		margin-bottom: 5%;
+  	}
+  	.e textarea{
+  		width: 80%;
+  		height: 80px;;
+  	}

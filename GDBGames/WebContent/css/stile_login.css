@@ -1,0 +1,161 @@
+body{
+    background: radial-gradient(circle, #4B0082, black 70%);
+    color: white;
+    flex-direction: column;
+    min-height: 100vh;
+    height:100%;
+    overflow-y: auto;
+
+#loginForm input[type="text"],
+#signUpForm input[type="text"], 
+input[type="password"] ,
+input[type="number"] ,
+input[type="email"] {
+    width: 60%;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 4px;  
+}
+
+input[type="number"] {
+    width: 10%;
+}
+
+.error-message, .required {
+	color: red;
+}
+.error-message {
+	font-size: 1.1em;
+	margin-top: -6%;
+	margin-bottom: 3%;
+}
+
+ .botton {
+    background-color: #800080; 
+    color: white; 
+    border: none;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  .botton:hover {
+    background-color: #a64ca6;
+  }
+  
+  /* smartphone */
+  @media screen and (max-width: 600px) {
+    .header .fotoRic {
+    	width: 80%;
+    }
+    .header {
+    	margin-bottom: 10%;
+    	display: grid;
+    }
+    .header .logo {
+    	margin-left: 15%;
+    }
+    .header .home {
+    	margin-left: 10px;
+    }
+    .header .sinistra {
+    	display: contents;
+    }
+    .header .account {
+    	margin-top: -35%;
+    	margin-left: 65%;
+    }
+    .header .destra {
+    	margin-top: 10px;
+    	margin-left: 10px;
+    }
+    .f {
+    	width: 85%;
+    	margin-top: 10%;
+    	text-align: center;
+    }
+    .f .contatto {
+    	margin-bottom: 5%;
+    }
+    .f .crediti b {
+    	margin-right: 22%;
+    	text-align: center;
+    }
+    .f .crediti p {
+    	text-align: center;
+    }
+    .f .crediti {
+    	margin-top: 10%;
+    }
+    
+  }
+  
+
+  /* pc */
+  @media screen and (min-width: 1025px) {
+    
+    .header input[type="submit"] {
+    	border-radius: none;
+    }
+    .f {
+    	width: 100%;
+    	position: absolute;
+    }
+    .form-container {
+      max-width: 600px;
+      margin: 5% auto 5% auto;
+      padding: 20px;
+    }
+
+    .button, button {
+      font-size: 15px; 
+      padding: 10xp 20px;
+    }
+    #loginForm {
+  	margin: 20% 20% 15% 20%;
+  }  
+  .reg{
+  	margin: 1% 20% 5% 20%;
+  }
+  }
+  
+  /* tablet */
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  #loginForm {
+  	margin: 20% 20% 15% 20%;
+  }  
+  .reg{
+  	margin: 1% 20% 5% 20%;
+  }
+    .button, button {
+      font-size: 17px;
+      padding: 10px 20px;
+    }
+    .fotoRic {
+    	margin-top: -8px;
+    	margin-left: -10px;
+    	width: 2em;
+    }
+    .search-bar {
+        width: 180px;
+    }
+   .destra {
+   		margin-bottom: -5%;
+   			margin-left: 5%;
+   			margin-right: -85%;
+   }
+    .f .contatto {
+    	margin-right: 20px;
+            	margin-left: -30px; 
+    }
+     .f {
+    	width: 100%;
+    	position: absolute;
+    	margin-top: 10%;
+    }
+  }

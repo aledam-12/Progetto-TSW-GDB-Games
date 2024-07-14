@@ -1,0 +1,136 @@
+body {
+		background: radial-gradient(circle, #4B0082, black 70%);
+    	color: white;
+	}
+    .titolo .numero, .titolo .data {
+        display: inline-block;
+        margin-right: 100px;
+    }
+    .titolo {
+        font-size: 1.8em;
+        border-bottom: 2px solid white;
+    }
+    .destinatario h2 {
+    	margin-bottom: -1%;
+    }
+    .intestazione {
+        margin-top: 30px;
+    }
+    .dettagli-prodotti {
+        width: 45%;
+        border-collapse: collapse; 
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .dettagli-prodotti img {
+        max-width: 85px;
+        height: auto;
+    }
+    .dettagli-prodotti th, .dettagli-prodotti td {
+        border: 2px solid white;
+        padding: 10px;
+    }
+    
+    /* smartphone */
+  @media screen and (max-width: 600px) {
+    .f {
+    	width: 85%;
+    	margin-top: 10%;
+    	text-align: center;
+    }
+    .f .contatto {
+    	margin-bottom: 5%;
+    }
+    .f .crediti b {
+    	margin-right: 22%;
+    	text-align: center;
+    }
+    .f .crediti p {
+    	text-align: center;
+    }
+    .f .crediti {
+    	margin-top: 10%;
+    }
+   	 .titolo, .destinatario, .intestazione, .corpo {
+        padding: 5px;
+        margin: 5px;
+    }
+    
+    .titoli, .corpo {
+        display: block;
+        width: 100%;
+    }
+    
+    .titoli th, .corpo td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .titoli th {
+        text-align: right;
+        padding-right: 15px;
+    }
+    
+    .titoli th::after {
+        content: ":";
+        margin-left: 5px;
+    }
+    
+    .corpo td {
+        text-align: left;
+        padding-left: 15px;
+    }
+    
+    .titolo .numero, .titolo .data, .intestazione b {
+        display: block;
+        margin: 5px 0;
+    }
+    
+    .destinatario h3, .destinatario p {
+        margin: 5px 0;
+    }
+    
+    .dettagli-prodotti {
+        max-width: 100%;
+        height: auto;
+    }
+  }
+   .botton {
+    background-color: #800080; 
+    color: white; 
+    border: none;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  .botton:hover {
+    background-color: #a64ca6;
+  }
+  .botton a{
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  }  
+    
+    /* tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+		.dettagli-prodotti {
+			width: 70%;
+		}
+		.fattura footer {
+			position: absolute;
+		}
+    	.contatto {
+            	margin-right: 20px;
+            	margin-left: -30px;
+            }
+	}
+    
